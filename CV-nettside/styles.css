@@ -721,41 +721,76 @@ footer {
 
 .footer-contact-simple {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0 2rem 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0 3rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-contact-item {
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(74, 124, 89, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  transition: all 0.3s ease;
+}
+
+.footer-contact-item:hover {
+  background: rgba(74, 124, 89, 0.2);
+  border-color: rgba(0, 255, 65, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
 }
 
 .contact-icon {
-  font-size: 2rem;
-  min-width: 60px;
+  font-size: 2.5rem;
+  min-width: 70px;
   text-align: center;
 }
 
 .footer-contact-item > div {
   flex: 1;
+  text-align: left;
 }
 
 .contact-value {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: white;
 }
 
 .contact-link {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #00ff41;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 600;
+}
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00ff41;
+  transition: width 0.3s ease;
 }
 
 .contact-link:hover {
   color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.6);
+}
+
+.contact-link:hover::after {
+  width: 100%;
 }
 
 .social-buttons {
@@ -780,8 +815,8 @@ footer {
 }
 
 .social-btn img {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
