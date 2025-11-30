@@ -909,9 +909,36 @@ footer {
     font-size: 0.95rem;
   }
 
-  /* Hide profile image on mobile */
+  /* Show profile image on mobile but make it compact */
   .hero-image {
-    display: none;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .profile-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-image {
+    height: 250px;
+  }
+
+  .profile-stats-container {
+    padding: 1.5rem;
+  }
+
+  .profile-stat {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
   }
 
   /* Stack buttons vertically */
@@ -1012,6 +1039,27 @@ footer {
 
   .hero-content p {
     font-size: 0.9rem;
+  }
+
+  /* Make profile card even more compact on tiny screens */
+  .hero-image {
+    max-width: 250px;
+  }
+
+  .profile-image {
+    height: 200px;
+  }
+
+  .profile-stats-container {
+    padding: 1rem;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+  }
+
+  .stat-value {
+    font-size: 1rem;
   }
 
   .section-title {
