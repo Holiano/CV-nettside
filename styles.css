@@ -51,6 +51,20 @@ nav {
   font-family: "Press Start 2P", cursive;
   font-size: 1.5rem;
   font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 255, 65, 0.5));
+}
+
+.logo-j {
+  color: #ffffff;
+  margin-right: 2px;
+}
+
+.logo-hb {
   background: linear-gradient(135deg, var(--accent), var(--accent-warm));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

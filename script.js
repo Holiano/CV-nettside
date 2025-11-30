@@ -1,3 +1,14 @@
+// ============================================
+// LOGO CLICK TO TOP
+// ============================================
+
+const logo = document.getElementById("logo");
+if (logo) {
+  logo.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 // Smooth scroll behavior for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
