@@ -779,9 +779,19 @@ footer {
   text-decoration: none;
 }
 
+.social-btn img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
 .social-btn:hover {
   background: #00ff41;
   transform: translateY(-3px);
+}
+
+.social-btn:hover img {
+  filter: none;
 }
 
 .github-btn:hover {
