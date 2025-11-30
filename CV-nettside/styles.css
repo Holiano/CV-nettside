@@ -5,13 +5,13 @@
 }
 
 :root {
-  --primary: #0f172a;
-  --secondary: #64748b;
-  --accent: #06b6d4;
-  --accent-warm: #f97316;
-  --light: #f8fafc;
-  --border: #e2e8f0;
-  --success: #10b981;
+  --primary: #0a1f12;
+  --secondary: #4a7c59;
+  --accent: #00ff41;
+  --accent-warm: #00d924;
+  --light: #f0fdf4;
+  --border: #bbf7d0;
+  --success: #22c55e;
   --surface: #ffffff;
 }
 
@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, var(--primary) 0%, #1a2851 100%);
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(135deg, var(--primary) 0%, #0d2818 100%);
   color: var(--primary);
   line-height: 1.6;
   min-height: 100vh;
@@ -48,9 +48,9 @@ nav {
 }
 
 .logo {
-  font-family: "Syne", sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 400;
   background: linear-gradient(135deg, var(--accent), var(--accent-warm));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -132,12 +132,13 @@ nav a:hover::after {
 }
 
 .hero-content h1 {
-  font-family: "Syne", sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1.1;
   margin-bottom: 1rem;
   color: var(--primary);
+  letter-spacing: 2px;
 }
 
 .accent-text {
@@ -271,7 +272,7 @@ nav a:hover::after {
 }
 
 .stat-value {
-  font-family: "Syne", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--primary);
@@ -288,13 +289,14 @@ section:nth-child(odd) {
 }
 
 .section-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 3rem;
   color: var(--primary);
   position: relative;
   display: inline-block;
+  letter-spacing: 1px;
 }
 
 .section-title::after {
@@ -349,11 +351,13 @@ section:nth-child(odd) {
 }
 
 .card-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .card-subtitle {
@@ -364,7 +368,7 @@ section:nth-child(odd) {
 }
 
 .card-meta {
-  color: var(--secondary);
+  color: #374151;
   font-size: 0.85rem;
   margin-bottom: 1rem;
   display: flex;
@@ -379,7 +383,7 @@ section:nth-child(odd) {
 }
 
 .card-description {
-  color: var(--secondary);
+  color: #1f2937;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -390,7 +394,7 @@ section:nth-child(odd) {
 }
 
 .bullet-list li {
-  color: var(--secondary);
+  color: #1f2937;
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 0.5rem;
@@ -421,11 +425,13 @@ section:nth-child(odd) {
 }
 
 .skill-category h3 {
-  font-family: "Syne", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .skill-tags {
@@ -437,14 +443,14 @@ section:nth-child(odd) {
 .skill-tag {
   background: linear-gradient(
     135deg,
-    rgba(6, 182, 212, 0.1),
-    rgba(249, 115, 22, 0.05)
+    rgba(0, 255, 65, 0.1),
+    rgba(0, 217, 36, 0.05)
   );
-  color: var(--primary);
+  color: #1f2937;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(0, 255, 65, 0.3);
   transition: all 0.3s;
 }
 
@@ -478,11 +484,13 @@ section:nth-child(odd) {
 }
 
 .language-name {
-  font-family: "Syne", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .language-level {
