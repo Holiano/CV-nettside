@@ -26,7 +26,13 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
-  zoom: 0.75;
+}
+
+/* Desktop zoom only - removed on mobile */
+@media (min-width: 769px) {
+  body {
+    zoom: 0.75;
+  }
 }
 
 /* HEADER & NAVIGATION */
@@ -870,66 +876,167 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  /* Better mobile navigation */
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  /* Hero section mobile */
   .hero {
     grid-template-columns: 1fr;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
     gap: 2rem;
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
   }
 
-  nav ul {
-    gap: 1rem;
-    font-size: 0.85rem;
+  .hero-content p {
+    font-size: 0.95rem;
   }
 
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
+  /* Hide profile image on mobile */
   .hero-image {
     display: none;
   }
 
-  .hero-contact {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  nav ul {
-    gap: 0.5rem;
-    font-size: 0.75rem;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
-
+  /* Stack buttons vertically */
   .cta-buttons {
     flex-direction: column;
+    gap: 0.75rem;
   }
 
   .btn {
     width: 100%;
     text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Cards - more padding and better spacing */
+  .card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Skills grid */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Language and interests */
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  /* Footer contact */
+  .footer-contact-simple {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-contact-item > div {
+    text-align: center;
+  }
+
+  /* Social buttons */
+  .social-buttons {
+    gap: 1rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    gap: 0.25rem;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+    padding: 0.4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  /* Single column for interests on very small screens */
+  .interests-list {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 2rem 0.75rem;
+  }
+
+  /* Smaller touch targets but still accessible */
+  .btn {
+    padding: 0.875rem 1.25rem;
   }
 }
