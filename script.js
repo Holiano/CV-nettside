@@ -2,7 +2,36 @@
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 }
-window.scrollTo(0, 0);
+window.addEventListener('load', () => window.scrollTo(0, 0));
+
+// ============================================
+// HAMBURGER MENU
+// ============================================
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = hamburger.classList.contains("open");
+    hamburger.classList.toggle("open", !isOpen);
+    navMenu.classList.toggle("open", !isOpen);
+  });
+
+  navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("open");
+      navMenu.classList.remove("open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+      hamburger.classList.remove("open");
+      navMenu.classList.remove("open");
+    }
+  });
+}
 
 // ============================================
 // LOGO CLICK TO TOP
