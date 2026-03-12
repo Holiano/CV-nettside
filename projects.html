@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Julian Hjartholm Bosdal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .projects-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 30px var(--glow-violet);
+    }
+
+    .project-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-card-body {
+      padding: 1.25rem 1.5rem 1.5rem;
+    }
+
+    .project-card-title {
+      font-family: "Orbitron", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .project-card-desc {
+      font-size: 0.83rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .project-tag {
+      background: rgba(124, 58, 237, 0.12);
+      color: var(--text-secondary);
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      border: 1px solid rgba(124, 58, 237, 0.25);
+    }
+
+    .logo-wrapper {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .go-back-hint {
+      position: absolute;
+      top: 2.4rem;
+      left: 0;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo-wrapper">
+        <a href="index.html" class="logo">
+          <span class="logo-j">J</span><span class="logo-hb">HB</span>
+        </a>
+        <span class="go-back-hint">↑ go back</span>
+      </div>
+      <div class="nav-right">
+        <a href="projects.html" class="nav-projects-link">My Projects</a>
+        <details class="nav-dropdown">
+          <summary>Explore</summary>
+          <ul>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <div class="projects-page">
+    <h1 class="section-title">Projects</h1>
+
+    <div class="projects-grid">
+
+      <!-- EXAMPLE CARD — duplicate and fill in your own -->
+      <div class="project-card">
+        <!-- <img src="img/project1.png" alt="Project name" /> -->
+        <div class="project-card-body">
+          <div class="project-card-title">Project Title</div>
+          <p class="project-card-desc">Short description of what this project does and what you built.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Spring</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
