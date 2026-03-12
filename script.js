@@ -6,6 +6,25 @@ window.addEventListener('load', () => window.scrollTo(0, 0));
 
 
 // ============================================
+// THEME TOGGLE
+// ============================================
+
+const themeToggle = document.getElementById("theme-toggle");
+
+function applyTheme(green) {
+  document.body.classList.toggle("green-mode", green);
+}
+
+applyTheme(localStorage.getItem("theme") === "green");
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isGreen = document.body.classList.toggle("green-mode");
+    localStorage.setItem("theme", isGreen ? "green" : "dark");
+  });
+}
+
+// ============================================
 // LOGO CLICK TO TOP
 // ============================================
 

@@ -44,6 +44,36 @@
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Green mode */
+body.green-mode {
+  --bg-deep: #020d05;
+  --bg-mid: #061209;
+  --bg-surface: rgba(22, 163, 74, 0.04);
+  --bg-card: rgba(22, 163, 74, 0.06);
+  --bg-card-hover: rgba(22, 163, 74, 0.11);
+  --accent-a: #15803d;
+  --accent-b: #86efac;
+  --accent-grad: linear-gradient(135deg, #15803d, #86efac);
+  --text-primary: #f0fff4;
+  --text-secondary: #8892b0;
+  --text-muted: #166534;
+  --border-subtle: rgba(22, 163, 74, 0.15);
+  --border-accent: rgba(22, 163, 74, 0.5);
+  --glow-violet: rgba(21, 128, 61, 0.35);
+  --glow-cyan: rgba(134, 239, 172, 0.35);
+}
+
+body.green-mode header {
+  background: rgba(2, 13, 5, 0.8);
+}
+
+body.green-mode::before {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(22, 163, 74, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(74, 222, 128, 0.1) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(22, 163, 74, 0.05) 0%, transparent 80%);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -139,6 +169,53 @@ nav {
   background-clip: text;
 }
 
+/* Logo + toggle group */
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-accent);
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-muted);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease);
+}
+
+body.green-mode .theme-toggle {
+  background: rgba(22, 163, 74, 0.15);
+  border-color: var(--border-accent);
+}
+
+body.green-mode .toggle-knob {
+  transform: translateX(20px);
+  background: var(--accent-b);
+}
+
 /* Nav right group */
 .nav-right {
   display: flex;
@@ -148,7 +225,7 @@ nav {
 
 .nav-projects-link {
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -267,7 +344,8 @@ nav a:hover::after {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  padding: 0 2rem;
+  align-content: start;
+  padding: 5rem 2rem 0;
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
@@ -344,7 +422,7 @@ nav a:hover::after {
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
