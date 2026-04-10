@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="green-mode">
   <!-- HEADER -->
   <header>
     <nav>
@@ -21,22 +21,25 @@
         <div class="logo" id="logo">
           <span class="logo-j">J</span><span class="logo-hb">HB</span>
         </div>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><span
-            class="toggle-knob"></span></button>
       </div>
       <div class="nav-right">
-        <a href="projects.html" class="nav-projects-link">My Projects</a>
-        <details class="nav-dropdown">
-          <summary>Explore</summary>
-          <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </details>
+        <a href="projects.html" class="nav-flat-link">My Projects</a>
+        <a href="#education" class="nav-flat-link">Education</a>
+        <a href="#experience" class="nav-flat-link">Experience</a>
+        <a href="#skills" class="nav-flat-link">Skills</a>
+        <a href="#contact" class="nav-flat-link">Contact</a>
       </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="projects.html" class="nav-flat-link">My Projects</a>
+      <a href="#education" class="nav-flat-link">Education</a>
+      <a href="#experience" class="nav-flat-link">Experience</a>
+      <a href="#skills" class="nav-flat-link">Skills</a>
+      <a href="#contact" class="nav-flat-link">Contact</a>
+    </div>
   </header>
 
   <!-- HERO SECTION -->
@@ -128,6 +131,25 @@
   <section id="experience">
     <div class="container">
       <h2 class="section-title">Experience</h2>
+
+      <div class="card">
+        <div class="card-subtitle">Church</div>
+        <div class="card-title">Leader</div>
+        <div class="card-meta">
+          <div class="card-meta-item">📍 Bergen, Norway</div>
+          <div class="card-meta-item">🕐 Ongoing</div>
+          <div class="card-meta-item">Volunteer</div>
+        </div>
+        <div class="card-description">
+          Leading a team of twenty people with full responsibility for their well-being and group dynamics.
+        </div>
+        <ul class="bullet-list">
+          <li>Responsible for the well-being of a team of twenty people</li>
+          <li>Creating and maintaining a healthy team culture</li>
+          <li>Delegating tasks and ensuring everyone has a clear role</li>
+          <li>Coordinating all preparations ahead of church services and events</li>
+        </ul>
+      </div>
 
       <div class="card">
         <div class="card-subtitle">Fribyte</div>
@@ -358,19 +380,15 @@
       </h2>
 
       <div class="footer-contact-simple">
-        <div class="footer-contact-item">
+        <a href="mailto:Bosdalj@gmail.com" class="footer-contact-item footer-contact-clickable">
           <span class="contact-icon">📧</span>
-          <div>
-            <a href="mailto:Bosdalj@gmail.com" class="contact-link">Bosdalj@gmail.com</a>
-          </div>
-        </div>
+          <span class="contact-link">Bosdalj@gmail.com</span>
+        </a>
 
-        <div class="footer-contact-item">
+        <a href="tel:+4795454892" class="footer-contact-item footer-contact-clickable">
           <span class="contact-icon">📞</span>
-          <div>
-            <a href="tel:+4795454892" class="contact-link">+47 954 54 892</a>
-          </div>
-        </div>
+          <span class="contact-link">+47 954 54 892</span>
+        </a>
       </div>
 
       <div class="social-buttons">

@@ -5,24 +5,6 @@ if (history.scrollRestoration) {
 window.addEventListener('load', () => window.scrollTo(0, 0));
 
 
-// ============================================
-// THEME TOGGLE
-// ============================================
-
-const themeToggle = document.getElementById("theme-toggle");
-
-function applyTheme(green) {
-  document.body.classList.toggle("green-mode", green);
-}
-
-applyTheme(localStorage.getItem("theme") === "green");
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    const isGreen = document.body.classList.toggle("green-mode");
-    localStorage.setItem("theme", isGreen ? "green" : "dark");
-  });
-}
 
 // ============================================
 // LOGO CLICK TO TOP
@@ -190,12 +172,37 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  document.querySelectorAll("nav a").forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href").slice(1) === current) {
-      link.style.color = "var(--accent)";
+  document.querySelectorAll("nav a.nav-flat-link").forEach((link) => {
+    const href = link.getAttribute("href");
+    const hash = href.includes("#") ? href.split("#")[1] : null;
+    if (hash && hash === current) {
+      link.style.color = "var(--text-primary)";
     } else {
-      link.style.color = "var(--secondary)";
+      link.style.color = "";
     }
   });
 });
+
+// ============================================
+// HAMBURGER MENU
+// ============================================
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("open");
+    hamburger.classList.toggle("open", isOpen);
+    hamburger.setAttribute("aria-expanded", isOpen);
+  });
+
+  // Close menu when a link is clicked
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      hamburger.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+    });
+  });
+}
