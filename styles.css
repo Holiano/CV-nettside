@@ -1452,6 +1452,6 @@ html::after {
     display: flex;
   }
   header {
-    position: relative;
+    position: sticky;
   }
 }
