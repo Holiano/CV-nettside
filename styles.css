@@ -350,6 +350,19 @@ nav a:hover::after {
   background-clip: text;
 }
 
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.cursor {
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: blink 1s step-end infinite;
+}
+
 .hero-content p {
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -1278,6 +1291,44 @@ footer p {
 
   footer {
     padding: 3rem 1.25rem 2rem;
+  }
+}
+
+/* ==========================================
+   NORSE DRAGON COLUMNS
+   ========================================== */
+
+html::before,
+html::after {
+  content: "";
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  width: calc((100vw - 1100px) / 2);
+  max-width: 115px;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('img/viking-dragon.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  filter: invert(1) contrast(3) sepia(1) saturate(3) hue-rotate(235deg) brightness(0.6);
+  mix-blend-mode: screen;
+}
+
+html::before {
+  left: 0;
+}
+
+html::after {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1279px) {
+  html::before,
+  html::after {
+    display: none;
   }
 }
 
