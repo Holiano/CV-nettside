@@ -14,6 +14,27 @@
 </head>
 
 <body class="green-mode">
+
+  <!-- BACKGROUND STRING -->
+  <svg class="bg-string" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="glow-strong">
+        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- dark fill below the arch -->
+    <path class="string-shadow" d="M -50,900 Q 960,-200 2010,900 L 2010,99999 L -50,99999 Z"/>
+    <!-- dim base string -->
+    <path class="string-base" d="M -50,900 Q 960,-200 2010,900"/>
+    <!-- travelling glow -->
+    <path class="string-glow" d="M -50,900 Q 960,-200 2010,900" filter="url(#glow-strong)"/>
+  </svg>
+
   <!-- HEADER -->
   <header>
     <nav>
@@ -45,9 +66,9 @@
   <!-- HERO SECTION -->
   <section class="hero container">
     <div class="hero-content">
-      <h1>Julian <span class="accent-text">Hjartholm Bosdal</span><span class="cursor">_</span></h1>
+      <h1>Julian <span class="accent-text">Hjartholm Bosdal</span></h1>
       <p>
-        CS student and Vibe coder looking for a challenge
+        CS student and Vibe coder looking for a challenge<span class="cursor">_</span>
       </p>
     </div>
 

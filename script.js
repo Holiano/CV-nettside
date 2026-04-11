@@ -206,3 +206,28 @@ if (hamburger && mobileMenu) {
     });
   });
 }
+
+// ============================================
+// BACKGROUND STRING GLOW ANIMATION
+// ============================================
+(function () {
+  window.addEventListener('load', () => {
+    const path = document.querySelector('.string-glow');
+    if (!path) return;
+    const length = path.getTotalLength();
+    const seg = length * 0.04;
+    const duration = 12000;
+
+    path.style.strokeDasharray = `${seg} ${length + seg}`;
+    path.style.strokeDashoffset = length + seg;
+
+    let start = null;
+    function animate(ts) {
+      if (!start) start = ts;
+      const progress = ((ts - start) % duration) / duration;
+      path.style.strokeDashoffset = (length + seg) - progress * (length + seg * 2);
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+  });
+})();
