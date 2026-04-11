@@ -18,21 +18,38 @@
   <!-- BACKGROUND STRING -->
   <svg class="bg-string" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <defs>
-      <filter id="glow">
-        <feGaussianBlur stdDeviation="4" result="blur"/>
-        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <radialGradient id="orb-grad" cx="38%" cy="35%" r="60%">
+        <stop offset="0%"   stop-color="#d4ffe8" stop-opacity="1"/>
+        <stop offset="35%"  stop-color="#4ade80" stop-opacity="0.9"/>
+        <stop offset="70%"  stop-color="#15803d" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#052e16" stop-opacity="0.4"/>
+      </radialGradient>
+      <filter id="orb-glow" x="-200%" y="-200%" width="500%" height="500%">
+        <feGaussianBlur stdDeviation="18" result="outer"/>
+        <feGaussianBlur stdDeviation="6"  result="inner" in="SourceGraphic"/>
+        <feMerge>
+          <feMergeNode in="outer"/>
+          <feMergeNode in="outer"/>
+          <feMergeNode in="inner"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
       </filter>
-      <filter id="glow-strong">
-        <feGaussianBlur stdDeviation="8" result="blur"/>
-        <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <filter id="spark-glow" x="-200%" y="-200%" width="500%" height="500%">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
       </filter>
     </defs>
     <!-- dark fill below the arch -->
     <path class="string-shadow" d="M -50,900 Q 960,-200 2010,900 L 2010,99999 L -50,99999 Z"/>
     <!-- dim base string -->
-    <path class="string-base" d="M -50,900 Q 960,-200 2010,900"/>
-    <!-- travelling glow -->
-    <path class="string-glow" d="M -50,900 Q 960,-200 2010,900" filter="url(#glow-strong)"/>
+    <path id="arch-path" class="string-base" d="M -50,900 Q 960,-200 2010,900"/>
+    <!-- orb at arch peak -->
+    <g id="orb-group">
+      <circle class="orb-halo" r="38"/>
+      <circle class="orb-sphere" r="18" fill="url(#orb-grad)" filter="url(#orb-glow)"/>
+      <circle class="orb-highlight" r="5" cx="-6" cy="-6"/>
+      <g id="spark-container" filter="url(#spark-glow)"/>
+    </g>
   </svg>
 
   <!-- HEADER -->

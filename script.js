@@ -208,26 +208,57 @@ if (hamburger && mobileMenu) {
 }
 
 // ============================================
-// BACKGROUND STRING GLOW ANIMATION
+// ORB — position at arch peak + electric hover
 // ============================================
 (function () {
   window.addEventListener('load', () => {
-    const path = document.querySelector('.string-glow');
-    if (!path) return;
-    const length = path.getTotalLength();
-    const seg = length * 0.04;
-    const duration = 12000;
+    const archPath = document.getElementById('arch-path');
+    const orbGroup = document.getElementById('orb-group');
+    const sparkContainer = document.getElementById('spark-container');
+    if (!archPath || !orbGroup) return;
 
-    path.style.strokeDasharray = `${seg} ${length + seg}`;
-    path.style.strokeDashoffset = length + seg;
-
-    let start = null;
-    function animate(ts) {
-      if (!start) start = ts;
-      const progress = ((ts - start) % duration) / duration;
-      path.style.strokeDashoffset = (length + seg) - progress * (length + seg * 2);
-      requestAnimationFrame(animate);
+    // Place orb at the topmost point of the arch (min Y)
+    const steps = 200;
+    const len = archPath.getTotalLength();
+    let peakPt = archPath.getPointAtLength(0);
+    for (let i = 1; i <= steps; i++) {
+      const pt = archPath.getPointAtLength((i / steps) * len);
+      if (pt.y < peakPt.y) peakPt = pt;
     }
-    requestAnimationFrame(animate);
+    orbGroup.setAttribute('transform', `translate(${peakPt.x}, ${peakPt.y})`);
+
+    // Electric sparks
+    const ns = 'http://www.w3.org/2000/svg';
+    let sparkInterval = null;
+
+    function makeSpark() {
+      const angle = Math.random() * Math.PI * 2;
+      const boltLen = 25 + Math.random() * 45;
+      const segs = 3 + Math.floor(Math.random() * 3);
+      const pts = [[0, 0]];
+      for (let i = 1; i <= segs; i++) {
+        const t = i / segs;
+        const bx = Math.cos(angle) * boltLen * t;
+        const by = Math.sin(angle) * boltLen * t;
+        const jx = -Math.sin(angle) * (Math.random() - 0.5) * 16;
+        const jy =  Math.cos(angle) * (Math.random() - 0.5) * 16;
+        pts.push([bx + jx, by + jy]);
+      }
+      const poly = document.createElementNS(ns, 'polyline');
+      poly.setAttribute('points', pts.map(p => p.join(',')).join(' '));
+      poly.setAttribute('class', 'spark');
+      sparkContainer.appendChild(poly);
+      setTimeout(() => poly.remove(), 280);
+    }
+
+    orbGroup.addEventListener('mouseenter', () => {
+      makeSpark();
+      sparkInterval = setInterval(() => makeSpark(), 80);
+    });
+
+    orbGroup.addEventListener('mouseleave', () => {
+      clearInterval(sparkInterval);
+    });
   });
 })();
+
