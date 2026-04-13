@@ -284,7 +284,7 @@ body.green-mode .toggle-knob {
 /* Flat nav links */
 .nav-flat-link {
   font-family: "Press Start 2P", cursive;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-decoration: none;
   color: var(--text-primary);
   letter-spacing: 1px;
@@ -1210,7 +1210,7 @@ footer p {
   }
 
   .nav-flat-link {
-    font-size: 0.46rem;
+    font-size: 0.65rem;
   }
 
   .logo {
@@ -1220,9 +1220,9 @@ footer p {
   /* Hero */
   .hero {
     grid-template-columns: 1fr;
-    padding: 2rem 1.5rem 2rem;
+    padding: 2rem 1.5rem 5rem;
     gap: 1rem;
-    min-height: auto;
+    min-height: 85vh;
     align-items: start;
   }
 
@@ -1246,12 +1246,12 @@ footer p {
   }
 
   .scroll-indicator {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    margin-top: 1.5rem;
-    animation: none;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    animation: fadeInUp 1s var(--ease) 0.5s both;
     opacity: 0.6;
   }
 
@@ -1441,7 +1441,7 @@ html::after {
 }
 
 .mobile-menu .nav-flat-link {
-  font-size: 0.65rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 640px) {
