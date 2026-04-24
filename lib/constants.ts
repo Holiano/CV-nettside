@@ -82,7 +82,7 @@ export const experiences: Experience[] = [
 		endDate: 'Jun 2025',
 		description: [
 			'Organised social events for IT students including bouldering, volleyball, paintball and tournaments',
-			'Connected computer engineering students across HVL campuses through recurring initiatives',
+			'Connected IT students across campuses',
 		],
 		technologies: ['Event Planning', 'Community Building', 'Student Engagement'],
 	},
