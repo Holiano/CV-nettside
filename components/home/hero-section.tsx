@@ -72,7 +72,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						Comfortable working with modern AI tooling and eager to contribute in a practical, team-based environment.
+						A showcase of my projects, skills and achievements in the field of engineering
 					</motion.p>
 
 					<motion.div
@@ -85,9 +85,9 @@ export function HeroSection() {
 							</Link>
 						</Button>
 						<Button size="lg" variant="outline" asChild>
-							<Link href="#" download>
+							<a href="/cv.pdf" download>
 								Download CV <FileDown className="ml-2 h-4 w-4" />
-							</Link>
+							</a>
 						</Button>
 					</motion.div>
 				</motion.div>

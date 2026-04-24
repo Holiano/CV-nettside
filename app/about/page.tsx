@@ -63,8 +63,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Pursuing a Bachelor in Computer Engineering at HVL with a grade average of
-									4.67/5.0 across 9 graded courses.
+									Pursuing a Bachelor in Computer Engineering at HVL with a 4.67/5.0 GPA.
+									Focused on Java OOP, database design (SQL & MongoDB), and distributed systems.
 								</p>
 							</CardContent>
 						</Card>
@@ -75,8 +75,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
-									Volunteer programmer at Fribyte, team leader at Salt Bergen church,
-									and experience across logistics, healthcare, and aquaculture.
+									Team Leader at Salt Bergen leading a team of 24, former Volunteer Programmer at Fribyte,
+									and background in logistics, healthcare, and aquaculture.
 								</p>
 							</CardContent>
 						</Card>
@@ -87,8 +87,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in Java, Spring Boot, SQL, MongoDB, HTML/CSS/JS, Git, Docker,
-									and modern AI tooling like Claude Code and MCP.
+									Proficient in Git, Prompt Engineering, and SQL/NoSQL design. Experienced with Java,
+									Spring Boot, and building AI-assisted applications.
 								</p>
 							</CardContent>
 						</Card>

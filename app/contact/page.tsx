@@ -62,11 +62,11 @@ export default function ContactPage() {
 									<div className="space-y-4">
 										<div className="flex items-center">
 											<Phone className="h-5 w-5 text-primary mr-3" />
-											<p className="text-muted-foreground">+47 954 54 892</p>
+											<a href="tel:+4795454892" className="text-muted-foreground hover:text-primary transition-colors">+47 954 54 892</a>
 										</div>
 										<div className="flex items-center">
 											<Mail className="h-5 w-5 text-primary mr-3" />
-											<p className="text-muted-foreground">Bosdalj@gmail.com</p>
+											<a href="mailto:Bosdalj@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">Bosdalj@gmail.com</a>
 										</div>
 										<div className="flex items-center">
 											<MapPin className="h-5 w-5 text-primary mr-3" />
