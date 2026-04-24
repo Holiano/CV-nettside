@@ -1,7 +1,7 @@
 export const siteConfig = {
-	name: 'Engineering Portfolio',
+	name: 'Julian Hjartholm Bosdal',
 	description:
-		'A professional portfolio website template for engineering students.',
+		'Computer engineering student at HVL with strong academic results and hands-on experience building real projects.',
 	mainNav: [
 		{
 			title: 'Home',
@@ -41,14 +41,14 @@ export const siteConfig = {
 		},
 	],
 	links: {
-		github: 'https://github.com/yourusername',
-		linkedin: 'https://linkedin.com/in/yourusername',
+		github: 'https://github.com/Holianox',
+		linkedin: 'https://linkedin.com/in/julian-bosdal',
 		twitter: 'https://twitter.com/yourusername',
 		facebook: 'https://facebook.com/yourusername',
 		instagram: 'https://instagram.com/yourusername',
-		whatsapp: 'https://wa.me/yourphonenumber',
-		email: 'mailto:youremail@example.com',
-		phone: 'tel:+1234567890',
+		whatsapp: 'https://wa.me/4795454892',
+		email: 'mailto:Bosdalj@gmail.com',
+		phone: 'tel:+4795454892',
 	},
 };
 
@@ -64,30 +64,98 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		title: 'Engineering Intern',
-		company: 'Tech Company',
-		location: 'City, Country',
-		startDate: 'May 2023',
-		endDate: 'Aug 2023',
+		title: 'Team Leader',
+		company: 'Salt Bergen (Church)',
+		location: 'Bergen, Norway',
+		startDate: 'Mar 2026',
+		endDate: 'Present',
 		description: [
-			'Worked on developing and testing software components for embedded systems',
-			'Collaborated with senior engineers on project planning and execution',
-			'Implemented test procedures for quality assurance',
+			'Leading a team of 24 with full responsibility every third weekend',
+			'Coordinating preparations, welcoming guests, delegating tasks',
 		],
-		technologies: ['C++', 'Python', 'MATLAB', 'Git'],
+		technologies: ['Leadership', 'Event Organisation', 'Team Management'],
 	},
 	{
-		title: 'Research Assistant',
-		company: 'University Lab',
-		location: 'City, Country',
-		startDate: 'Jan 2023',
+		title: 'Volunteer Programmer',
+		company: 'Fribyte',
+		location: 'Bergen, Norway',
+		startDate: 'Aug 2024',
+		endDate: 'Aug 2025',
+		description: [
+			'Built and maintained client websites',
+			'Gained hands-on experience with Git, Docker, and server management',
+		],
+		technologies: ['Git', 'Docker', 'Web Development', 'Server Management'],
+	},
+	{
+		title: 'Event Organiser',
+		company: 'ROOT Linjeforening, HVL',
+		location: 'Bergen, Norway',
+		startDate: 'Aug 2024',
+		endDate: 'Jun 2025',
+		description: [
+			'Organised social events for IT students including bouldering, volleyball, paintball and tournaments',
+			'Connected computer engineering students across HVL campuses through recurring initiatives',
+		],
+		technologies: ['Event Planning', 'Community Building', 'Student Engagement'],
+	},
+	{
+		title: 'Vice President, Student Council',
+		company: 'Nordhordaland FHS',
+		location: 'Frekhaug, Norway',
+		startDate: 'Sep 2022',
 		endDate: 'Apr 2023',
 		description: [
-			'Assisted in research focusing on advanced materials for mechanical applications',
-			'Conducted literature reviews and compiled research findings',
-			'Performed data analysis and visualization of experimental results',
+			'Co-led a 6-person team that ran student events and bridged the gap between students and teachers',
 		],
-		technologies: ['MATLAB', 'CAD', 'Data Analysis', 'Python'],
+		technologies: ['Leadership', 'Event Planning', 'Communication'],
+	},
+	{
+		title: 'Warehouse Operator',
+		company: 'Eurosupply AS',
+		location: 'Flaktveit, Norway',
+		startDate: 'Jun 2023',
+		endDate: 'Aug 2024',
+		description: [
+			'Managed logistics for cruise ship supply',
+			'Operated forklifts, inventory & shipping',
+		],
+		technologies: ['Logistics', 'Inventory Management'],
+	},
+	{
+		title: 'Health Care Worker',
+		company: 'Gulen Kommune / Trondheim Kommune',
+		location: 'Dalsøyra/Brekke, Norway',
+		startDate: 'Jun 2021',
+		endDate: 'Aug 2025',
+		description: [
+			'Elderly care at Gulen Kommune',
+			'Support for individuals with autism & Down syndrome at Trondheim Kommune',
+		],
+		technologies: ['Healthcare', 'Patient Care'],
+	},
+	{
+		title: 'Aquaculture Technician',
+		company: 'Mowi Norway AS',
+		location: 'Hjartholm, Norway',
+		startDate: 'Jun 2021',
+		endDate: 'Aug 2022',
+		description: [
+			'Monitored fish health, feeding schedules, equipment, and environmental compliance',
+		],
+		technologies: ['Aquaculture', 'Environmental Monitoring'],
+	},
+	{
+		title: 'Cafe Assistant',
+		company: 'Norled AS',
+		location: 'Lavik/Oppedal, Norway',
+		startDate: 'Jun 2021',
+		endDate: 'Aug 2021',
+		description: [
+			'Customer service and food sales on ferry routes',
+			'High-volume, time-pressured environment',
+		],
+		technologies: ['Customer Service'],
 	},
 ];
 
@@ -102,31 +170,26 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		title: 'Smart Home Automation System',
+		title: 'Personal Portfolio & CV',
 		description:
-			'Designed and implemented a smart home automation system using IoT technologies to control lighting, temperature, and security features.',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
-		link: '#',
-		repo: '#',
+			'Personal website and CV built from scratch using AI-assisted development.',
+		image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+		tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+		link: 'https://julianbosdal.me',
 	},
 	{
-		title: 'Structural Analysis Software',
+		title: 'Poker Royale',
 		description:
-			'Developed software for structural analysis of beams and trusses using numerical methods and visualization techniques.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
-		link: '#',
-		repo: '#',
+			'Multiplayer Texas Hold\'em web app with a Java backend, PostgreSQL database, and server-side rendered pages. Led the team and managed collaboration using Maven and Git.',
+		image: 'https://images.pexels.com/photos/6664190/pexels-photo-6664190.jpeg',
+		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'JSP', 'Maven'],
 	},
 	{
-		title: 'Renewable Energy Monitoring',
+		title: 'Training Logger',
 		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
-		repo: '#',
+			'Web app to track BJJ, gym, running, and hiking sessions. No account needed — data saves locally in the browser.',
+		image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg',
+		tags: ['HTML', 'CSS', 'JavaScript'],
 	},
 ];
 
@@ -143,32 +206,39 @@ export type Education = {
 
 export const education: Education[] = [
 	{
-		degree: 'Bachelor of Science',
-		field: 'Mechanical Engineering',
-		institution: 'University Name',
-		location: 'City, Country',
-		startDate: 'Sep 2020',
-		endDate: 'Present',
-		gpa: '3.8/4.0',
+		degree: 'Bachelor',
+		field: 'Computer Engineering',
+		institution: 'HVL – Western Norway University',
+		location: 'Bergen, Norway',
+		startDate: 'Aug 2024',
+		endDate: 'Jul 2027',
+		gpa: '4.67/5.0',
 		achievements: [
-			'Dean\'s List (All Semesters)',
-			'Academic Excellence Scholarship',
-			'Senior Design Project Award',
+			'Grade average: A, A, A, A, A, A, A, B, C across 9 graded courses',
+			'Java OOP, database design (SQL + MongoDB), data structures & algorithms',
+			'Computer networks, TCP/IP, distributed systems, Linux, web dev, UML',
 		],
 	},
 	{
-		degree: 'High School Diploma',
-		field: 'Science and Mathematics',
-		institution: 'High School Name',
-		location: 'City, Country',
-		startDate: 'Sep 2016',
-		endDate: 'Jun 2020',
-		gpa: '4.0/4.0',
+		degree: 'Student & Stipendiat',
+		field: 'Sport & Outdoor / Aqua',
+		institution: 'Nordhordaland Folkehøgskule',
+		location: 'Norway',
+		startDate: 'Aug 2022',
+		endDate: 'Jun 2024',
 		achievements: [
-			'Valedictorian',
-			'National Mathematics Competition Finalist',
-			'Science Fair Gold Medal',
+			'Year 1: Aqua program – Vice president of the Student Council',
+			'Year 2: Sport & Outdoor with staff responsibilities',
 		],
+	},
+	{
+		degree: 'Bachelor (30 credits)',
+		field: 'Aquaculture Engineering',
+		institution: 'NTNU',
+		location: 'Trondheim, Norway',
+		startDate: 'Aug 2021',
+		endDate: 'Jun 2022',
+		achievements: [],
 	},
 ];
 
@@ -181,32 +251,7 @@ export type Certificate = {
 	pdf?: string;
 };
 
-export const certificates: Certificate[] = [
-	{
-		title: 'Engineering Professional Certification',
-		issuer: 'Professional Engineering Association',
-		date: 'Nov 2023',
-		id: 'CERT-12345',
-		url: '#',
-		pdf: '/certificates/sample.pdf',
-	},
-	{
-		title: 'CAD Design Specialist',
-		issuer: 'Autodesk',
-		date: 'Jun 2023',
-		id: 'CERT-67890',
-		url: '#',
-		pdf: '/certificates/sample.pdf',
-	},
-	{
-		title: 'Project Management Fundamentals',
-		issuer: 'Project Management Institute',
-		date: 'Mar 2023',
-		id: 'CERT-24680',
-		url: '#',
-		pdf: '/certificates/sample.pdf',
-	},
-];
+export const certificates: Certificate[] = [];
 
 export type Skill = {
 	name: string;
@@ -216,31 +261,21 @@ export type Skill = {
 
 export const skills: Skill[] = [
 	// Technical Skills
-	{ name: 'Mechanical Design', level: 9, category: 'technical' },
-	{ name: 'Structural Analysis', level: 8, category: 'technical' },
-	{ name: 'Thermodynamics', level: 7, category: 'technical' },
-	{ name: 'Control Systems', level: 8, category: 'technical' },
-	{ name: 'Circuit Design', level: 6, category: 'technical' },
-
-	// Software Skills
-	{ name: 'MATLAB', level: 9, category: 'software' },
-	{ name: 'AutoCAD', level: 8, category: 'software' },
-	{ name: 'SolidWorks', level: 9, category: 'software' },
-	{ name: 'Python', level: 7, category: 'software' },
-	{ name: 'C++', level: 6, category: 'software' },
-	{ name: 'ANSYS', level: 8, category: 'software' },
+	{ name: 'Git', level: 9, category: 'technical' },
+	{ name: 'Prompt Engineering', level: 8, category: 'technical' },
+	{ name: 'SQL / Database Design', level: 8, category: 'technical' },
+	{ name: 'AI/LLM Integration', level: 7, category: 'technical' },
 
 	// Soft Skills
-	{ name: 'Problem Solving', level: 9, category: 'soft' },
 	{ name: 'Team Leadership', level: 8, category: 'soft' },
-	{ name: 'Project Management', level: 7, category: 'soft' },
-	{ name: 'Technical Writing', level: 8, category: 'soft' },
-	{ name: 'Presentation', level: 7, category: 'soft' },
+	{ name: 'Problem Solving', level: 9, category: 'soft' },
+	{ name: 'Analytical Thinking', level: 8, category: 'soft' },
+	{ name: 'Volunteering', level: 9, category: 'soft' },
 
 	// Languages
-	{ name: 'English', level: 10, category: 'language' },
-	{ name: 'Spanish', level: 6, category: 'language' },
-	{ name: 'French', level: 4, category: 'language' },
+	{ name: 'Norwegian', level: 10, category: 'language' },
+	{ name: 'English', level: 9, category: 'language' },
+	{ name: 'German', level: 4, category: 'language' },
 ];
 
 export type BlogPost = {
@@ -252,29 +287,4 @@ export type BlogPost = {
 	slug: string;
 };
 
-export const blogPosts: BlogPost[] = [
-	{
-		title: 'Advances in Renewable Energy Technologies',
-		excerpt: 'Exploring the latest innovations in renewable energy and their impact on sustainable development.',
-		date: 'Mar 15, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg',
-		slug: 'advances-in-renewable-energy',
-	},
-	{
-		title: 'The Future of Robotics in Manufacturing',
-		excerpt: 'How robotics and automation are revolutionizing the manufacturing industry and creating new opportunities.',
-		date: 'Feb 22, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
-		slug: 'future-of-robotics-manufacturing',
-	},
-	{
-		title: 'Sustainable Building Materials in Modern Construction',
-		excerpt: 'An analysis of eco-friendly building materials and their applications in contemporary architecture.',
-		date: 'Jan 10, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg',
-		slug: 'sustainable-building-materials',
-	},
-];
+export const blogPosts: BlogPost[] = [];

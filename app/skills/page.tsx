@@ -9,7 +9,6 @@ import { fadeIn, staggerContainer } from '@/lib/motion';
 
 export default function SkillsPage() {
 	const technicalSkills = skills.filter(skill => skill.category === 'technical');
-	const softwareSkills = skills.filter(skill => skill.category === 'software');
 	const softSkills = skills.filter(skill => skill.category === 'soft');
 	const languageSkills = skills.filter(skill => skill.category === 'language');
 
@@ -66,8 +65,7 @@ export default function SkillsPage() {
 					<motion.div variants={fadeIn('down', 0.2)} className="text-center mb-12">
 						<h1 className="text-4xl font-bold mb-4">Skills & Expertise</h1>
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-							A comprehensive overview of my technical abilities, software proficiency,
-							soft skills, and language capabilities.
+							A comprehensive overview of my technical abilities, soft skills, and language capabilities.
 						</p>
 					</motion.div>
 
@@ -79,22 +77,16 @@ export default function SkillsPage() {
 							delay={0.3}
 						/>
 						<SkillCategory
-							title="Software Proficiency"
-							skills={softwareSkills}
-							icon={<Code2 className="h-6 w-6 text-secondary" />}
-							delay={0.4}
-						/>
-						<SkillCategory
 							title="Soft Skills"
 							skills={softSkills}
 							icon={<Brain className="h-6 w-6 text-accent" />}
-							delay={0.5}
+							delay={0.4}
 						/>
 						<SkillCategory
 							title="Languages"
 							skills={languageSkills}
 							icon={<Languages className="h-6 w-6 text-primary" />}
-							delay={0.6}
+							delay={0.5}
 						/>
 					</div>
 				</motion.div>

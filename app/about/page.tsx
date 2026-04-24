@@ -21,16 +21,17 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I am a passionate engineering student with a focus on innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles.
+							I'm Julian Hjartholm Bosdal — a computer engineering student at HVL with strong academic results
+							and hands-on experience building real projects. Comfortable working with modern AI tooling and
+							eager to contribute in a practical, team-based environment.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
-								Throughout my academic career, I've been involved in various projects that have
-								helped me develop practical skills and theoretical knowledge. I believe in
-								continuous learning and staying updated with the latest technological advancements.
+								I started at NTNU studying aquaculture engineering, then spent two years at Nordhordaland
+								Folkehøgskule before finding my true path in computer engineering at HVL. Since then I've
+								built everything from multiplayer web apps to AI-powered tools. And I'm focused on staying
+								ahead of the curve as AI reshapes how we work.
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
@@ -62,8 +63,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Currently pursuing a Bachelor's degree in Engineering with a focus on
-									practical applications and innovative solutions.
+									Pursuing a Bachelor in Computer Engineering at HVL with a grade average of
+									4.67/5.0 across 9 graded courses.
 								</p>
 							</CardContent>
 						</Card>
@@ -74,8 +75,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
-									Gained valuable experience through internships and projects, working
-									with cutting-edge technologies and methodologies.
+									Volunteer programmer at Fribyte, team leader at Salt Bergen church,
+									and experience across logistics, healthcare, and aquaculture.
 								</p>
 							</CardContent>
 						</Card>
@@ -86,8 +87,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in various engineering tools and technologies, with a strong
-									foundation in problem-solving and analytical thinking.
+									Proficient in Java, Spring Boot, SQL, MongoDB, HTML/CSS/JS, Git, Docker,
+									and modern AI tooling like Claude Code and MCP.
 								</p>
 							</CardContent>
 						</Card>
