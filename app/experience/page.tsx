@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+
 import { Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
