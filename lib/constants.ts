@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Julian Hjartholm Bosdal',
 	description:
-		'Computer engineering student at HVL with strong academic results and hands-on experience building real projects.',
+		'Combining a strong academic foundation with hands-on development experience',
 	mainNav: [
 		{
 			title: 'Home',
@@ -161,7 +161,7 @@ export const projects: Project[] = [
 		description:
 			'Personal website and CV built from scratch at first, then using AI-assisted development. Inspiration found in the README file',
 		image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-		tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+		tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages', 'Claude Code', 'Claude Design'],
 		link: 'https://julianbosdal.me',
 		repo: 'https://github.com/Holiano/CV-nettside',
 	},
@@ -170,7 +170,7 @@ export const projects: Project[] = [
 		description:
 			'Multiplayer Texas Hold\'em web app with a Java backend, PostgreSQL database, and server-side rendered pages. Group leader and managed collaboration using Maven and Git.',
 		image: 'https://images.pexels.com/photos/6664190/pexels-photo-6664190.jpeg',
-		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'JSP', 'Maven'],
+		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Maven', 'Tomcat'],
 		repo: 'https://github.com/Holiano/poker-royale',
 	},
 ];

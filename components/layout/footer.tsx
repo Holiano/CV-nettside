@@ -18,93 +18,61 @@ export function Footer() {
 		{ icon: <Instagram className="h-5 w-5" />, href: siteConfig.links.instagram, label: 'Instagram' },
 	];
 
-	const navColumns = [
-		{
-			title: 'About',
-			links: [
-				{ title: 'About Me', href: '/about' },
-				{ title: 'Education', href: '/education' },
-				{ title: 'Skills', href: '/skills' },
-			],
-		},
-		{
-			title: 'Work',
-			links: [
-				{ title: 'Experience', href: '/experience' },
-				{ title: 'Projects', href: '/projects' },
-				{ title: 'Certificates', href: '/certificates' },
-			],
-		},
-		{
-			title: 'Connect',
-			links: [
-				{ title: 'Blog', href: '/blog' },
-				{ title: 'Contact', href: '/contact' },
-				{ title: 'Resume', href: '/cv.pdf', download: true },
-			],
-		},
+	const navLinks = [
+		{ title: 'About Me', href: '/about' },
+		{ title: 'Education', href: '/education' },
+		{ title: 'Skills', href: '/skills' },
+		{ title: 'Experience', href: '/experience' },
+		{ title: 'Projects', href: '/projects' },
 	];
 
 	return (
-		<footer className="bg-card py-12 border-t">
-			<div className="container px-4 mx-auto">
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-					<div className="md:col-span-1">
-						<Link href="/" className="inline-block">
-							<span className="text-2xl font-bold text-gradient">Julian Bosdal</span>
-						</Link>
-						<p className="mt-4 text-sm text-muted-foreground">
-							Computer engineering student at HVL — Bergen, Norway.
-						</p>
-						<div className="mt-6 flex flex-wrap gap-3">
-							{socialLinks.map((link, index) => (
-								<Button key={index} size="icon" variant="outline" asChild>
-									<Link href={link.href} aria-label={link.label} target="_blank" rel="noreferrer">
-										{link.icon}
-									</Link>
-								</Button>
-							))}
-						</div>
-					</div>
+		<footer className="bg-card py-16 border-t mt-auto relative overflow-hidden">
+			{/* Subtle gradient background for the footer to harmonize with the rest of the site */}
+			<div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent pointer-events-none" />
 
-					<div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
-						{navColumns.map((column, index) => (
-							<div key={index}>
-								<h3 className="font-semibold mb-3">{column.title}</h3>
-								<ul className="space-y-2">
-									{column.links.map((link, linkIndex) => (
-										<li key={linkIndex}>
-											<Link
-												href={link.href}
-												className="text-muted-foreground hover:text-primary text-sm transition-colors"
-												{...(link.download ? { download: true } : {})}
-											>
-												{link.title}
-											</Link>
-										</li>
-									))}
-								</ul>
-							</div>
-						))}
-					</div>
+			<div className="container px-4 mx-auto flex flex-col items-center text-center relative z-10">
+				<Link href="/" className="inline-block mb-4">
+					<span className="text-3xl font-bold text-gradient">Julian Bosdal</span>
+				</Link>
+				<p className="text-sm text-muted-foreground mb-10 max-w-md">
+					Computer engineering student at HVL — Bergen, Norway.
+				</p>
+
+				<nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10">
+					{navLinks.map((link, index) => (
+						<Link
+							key={index}
+							href={link.href}
+							className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+						>
+							{link.title}
+						</Link>
+					))}
+				</nav>
+
+				<div className="flex flex-wrap justify-center gap-3 mb-10">
+					{socialLinks.map((link, index) => (
+						<Button 
+							key={index} 
+							size="icon" 
+							variant="outline" 
+							className="rounded-full hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all duration-300" 
+							asChild
+						>
+							<Link href={link.href} aria-label={link.label} target="_blank" rel="noreferrer">
+								{link.icon}
+							</Link>
+						</Button>
+					))}
 				</div>
 
-				<Separator className="my-8" />
+				<Separator className="w-full max-w-4xl mb-8 opacity-50" />
 
-				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
-					<p className="text-muted-foreground">
-						© {currentYear} Julian Hjartholm Bosdal. All rights reserved.
-					</p>
-					<div className="mt-4 sm:mt-0 flex gap-4">
-						<Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
-							Privacy Policy
-						</Link>
-						<Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
-							Terms of Service
-						</Link>
-					</div>
-				</div>
+				<p className="text-sm text-muted-foreground">
+					© {currentYear} Julian Hjartholm Bosdal. All rights reserved.
+				</p>
 			</div>
 		</footer>
 	);
-}
+}

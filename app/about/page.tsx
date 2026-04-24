@@ -21,9 +21,8 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I'm Julian Hjartholm Bosdal — a computer engineering student at HVL with strong academic results
-							and hands-on experience building real projects. Comfortable working with modern AI tooling and
-							eager to contribute in a practical, team-based environment.
+							I'm Julian Hjartholm Bosdal — a computer engineering student at HVL with strong academic results (4.67/5.0 GPA)
+							and hands-on experience building real projects. Currently focused on prompt engineering.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>

@@ -18,8 +18,8 @@ export function SkillsPreview() {
 		.sort((a, b) => b.level - a.level)
 		.slice(0, 3);
 
-	const topSoftwareSkills = skills
-		.filter(skill => skill.category === 'software')
+	const topLanguageSkills = skills
+		.filter(skill => skill.category === 'language')
 		.sort((a, b) => b.level - a.level)
 		.slice(0, 3);
 
@@ -32,7 +32,7 @@ export function SkillsPreview() {
 		<section className="py-16 md:py-24">
 			<div className="container px-4">
 				<SectionHeader
-					title="Technical Skills"
+					title="Skills"
 					description="Key competencies and technical expertise that I've developed throughout my engineering journey."
 				/>
 
@@ -79,9 +79,9 @@ export function SkillsPreview() {
 					>
 						<Card>
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Software Proficiency</h3>
+								<h3 className="text-xl font-bold mb-4">Languages</h3>
 								<div className="space-y-4">
-									{topSoftwareSkills.map((skill, index) => (
+									{topLanguageSkills.map((skill, index) => (
 										<div key={index}>
 											<div className="flex justify-between mb-1">
 												<span>{skill.name}</span>

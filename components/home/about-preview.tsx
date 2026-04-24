@@ -45,15 +45,14 @@ export function AboutPreview() {
 					>
 						<h3 className="text-2xl font-bold mb-4">Julian Hjartholm Bosdal</h3>
 						<p className="text-muted-foreground mb-6">
-							I'm a computer engineering student at HVL with strong academic results (4.67/5.0 average) and hands-on experience building real projects.
-							Comfortable working with modern AI tooling and eager to contribute in a practical, team-based environment.
+							I specialize in building practical, real-world applications. My current focus is advancing my skills in prompt engineering.
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-6">
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Education</h4>
-									<p className="text-sm text-muted-foreground">B. Computer Engineering, HVL</p>
+									<p className="text-sm text-muted-foreground">Computer Engineering, HVL</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
