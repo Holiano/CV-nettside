@@ -50,11 +50,11 @@ A modern, responsive engineering portfolio website built with Next.js, Tailwind 
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000] in your browser.
 
 ## 📜 Acknowledgments
 
-This project was inspired by and cites the [Lowinertia Engineering Portfolio Template](https://github.com/lowinertia/free-to-engineer-portfolio-template) from the [Engineering Portfolio Website topic](https://github.com/topics/engineering-portfolio-website) on GitHub.
+This project was inspired by and cites: https://github.com/niladri-1/Frontend-develope-portfolio.
 
 ---
 Built with ❤️ by Julian Bosdal

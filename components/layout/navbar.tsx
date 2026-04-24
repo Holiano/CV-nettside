@@ -131,9 +131,9 @@ export function Navbar() {
 
 				{/* Desktop actions */}
 				<div className="hidden md:flex items-center gap-4">
-					<Link href="/contact">
-						<Button>Contact Me</Button>
-					</Link>
+					<Button asChild>
+						<Link href="/contact">Contact Me</Link>
+					</Button>
 				</div>
 			</div>
 		</motion.header>

@@ -27,18 +27,6 @@ export const siteConfig = {
 			title: 'Projects',
 			href: '/projects',
 		},
-		{
-			title: 'Certificates',
-			href: '/certificates',
-		},
-		{
-			title: 'Blog',
-			href: '/blog',
-		},
-		{
-			title: 'Contact',
-			href: '/contact',
-		},
 	],
 	links: {
 		github: 'https://github.com/Holiano',
@@ -171,24 +159,19 @@ export const projects: Project[] = [
 	{
 		title: 'Personal Portfolio & CV',
 		description:
-			'Personal website and CV built from scratch using AI-assisted development.',
+			'Personal website and CV built from scratch at first, then using AI-assisted development. Inspiration found in the README file',
 		image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
 		tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
 		link: 'https://julianbosdal.me',
+		repo: 'https://github.com/Holiano/CV-nettside',
 	},
 	{
-		title: 'Poker Royale',
+		title: 'Poker - group project',
 		description:
-			'Multiplayer Texas Hold\'em web app with a Java backend, PostgreSQL database, and server-side rendered pages. Led the team and managed collaboration using Maven and Git.',
+			'Multiplayer Texas Hold\'em web app with a Java backend, PostgreSQL database, and server-side rendered pages. Group leader and managed collaboration using Maven and Git.',
 		image: 'https://images.pexels.com/photos/6664190/pexels-photo-6664190.jpeg',
 		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'JSP', 'Maven'],
-	},
-	{
-		title: 'Training Logger',
-		description:
-			'Web app to track BJJ, gym, running, and hiking sessions. No account needed — data saves locally in the browser.',
-		image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg',
-		tags: ['HTML', 'CSS', 'JavaScript'],
+		repo: 'https://github.com/Holiano/poker-royale',
 	},
 ];
 
