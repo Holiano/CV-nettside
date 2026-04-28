@@ -27,12 +27,12 @@ export function HeroSection() {
 					minWidth: 200.00,
 					scale: 0.8,
 					scaleMobile: 0.8,
-					color: 0xff3f81,
-					backgroundColor: 0x23153c,
+					color: 0x1FAD93,
+					backgroundColor: 0x08080C,
 					points: 10.00,
-					maxDistance: 15.00,
-					spacing: 20.00,
-					showDots: false,
+					maxDistance: 20.00,
+					spacing: 15.00,
+					showDots: true,
 				})
 			);
 		}
@@ -85,7 +85,7 @@ export function HeroSection() {
 							</Link>
 						</Button>
 						<Button size="lg" variant="outline" asChild>
-							<a href="/cv.pdf" download>
+							<a href="/Julian_H_Bosdal_CV.pdf" download>
 								Download CV <FileDown className="ml-2 h-4 w-4" />
 							</a>
 						</Button>

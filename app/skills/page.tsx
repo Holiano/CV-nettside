@@ -67,6 +67,7 @@ export default function SkillsPage() {
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
 							A comprehensive overview of my technical abilities, soft skills, and language capabilities.
 						</p>
+						<p className="text-sm text-muted-foreground italic mt-2">best served with a grain of salt</p>
 					</motion.div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -12,8 +12,10 @@ import { Button } from '@/components/ui/button';
 import {
 	Sheet,
 	SheetContent,
+	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -76,6 +78,9 @@ export function Navbar() {
 							</Button>
 						</SheetTrigger>
 						<SheetContent className="flex flex-col p-6">
+							<VisuallyHidden.Root>
+								<SheetTitle>Navigation Menu</SheetTitle>
+							</VisuallyHidden.Root>
 							<div className="flex items-center justify-between mb-8">
 								<Link href="/" className="flex items-center space-x-2">
 									<span className="font-bold text-2xl text-gradient">Portfolio</span>

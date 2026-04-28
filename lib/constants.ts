@@ -160,16 +160,25 @@ export const projects: Project[] = [
 		title: 'Personal Portfolio & CV',
 		description:
 			'Personal website and CV built from scratch at first, then using AI-assisted development. Inspiration found in the README file',
-		image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+		image: '/portfolio.webp',
 		tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages', 'Claude Code', 'Claude Design'],
 		link: 'https://julianbosdal.me',
 		repo: 'https://github.com/Holiano/CV-nettside',
 	},
 	{
+		title: 'Vela AI — Startup',
+		description:
+			'Co-founding a startup targeting the aquaculture industry, building an app for fish health veterinarians. The app uses speech-to-text to capture in-field registrations hands-free, automatically logs findings, generates reports, and stores everything securely. This will dramatically reduce paperwork for vets working on-site.',
+		image: '/vela-ai.webp',
+		tags: ['Startup', 'Mobile App', 'Speech-to-Text'],
+		link: 'https://velaai.onrender.com/',
+		repo: 'https://github.com/isacskogsholm1/IsacFiskehelse',
+	},
+	{
 		title: 'Poker - group project',
 		description:
 			'Multiplayer Texas Hold\'em web app with a Java backend, PostgreSQL database, and server-side rendered pages. Group leader and managed collaboration using Maven and Git.',
-		image: 'https://images.pexels.com/photos/6664190/pexels-photo-6664190.jpeg',
+		image: 'https://images.pexels.com/photos/15793573/pexels-photo-15793573.jpeg',
 		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Maven', 'Tomcat'],
 		repo: 'https://github.com/Holiano/poker-royale',
 	},
@@ -197,8 +206,8 @@ export const education: Education[] = [
 		gpa: '4.67/5.0',
 		achievements: [
 			'Grade average: A, A, A, A, A, A, A, B, C across 9 graded courses',
-			'Java OOP, database design (SQL + MongoDB), data structures & algorithms',
-			'Computer networks, TCP/IP, distributed systems, Linux, web dev, UML',
+			'Distributed systems & networking (DAT110), systems development (DAT109), deep learning (DAT255)',
+			'Algorithms & data structures, databases, operating systems, web applications, statistics',
 		],
 	},
 	{
@@ -252,7 +261,7 @@ export const skills: Skill[] = [
 	{ name: 'Team Leadership', level: 8, category: 'soft' },
 	{ name: 'Problem Solving', level: 9, category: 'soft' },
 	{ name: 'Analytical Thinking', level: 8, category: 'soft' },
-	{ name: 'Volunteering', level: 9, category: 'soft' },
+	{ name: 'Adaptability', level: 9, category: 'soft' },
 
 	// Languages
 	{ name: 'Norwegian', level: 10, category: 'language' },

@@ -30,7 +30,7 @@ export default function AboutPage() {
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
-							<a href="/cv.pdf" download>
+							<a href="/Julian_H_Bosdal_CV.pdf" download>
 								Download CV <ArrowDownCircle className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
@@ -58,8 +58,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Pursuing a Bachelor in Computer Engineering at HVL.
-									Focused on Java OOP, database design (SQL & MongoDB), and distributed systems.
+									Pursuing a Bachelor in Computer Engineering at HVL in Bergen, I have built a strong foundation in programming, algorithms, databases, operating systems, and web development over my first two years. I'm experienced with Java, SQL, and distributed systems, and have hands-on project experience working both in teams and independently.
 								</p>
 							</CardContent>
 						</Card>
@@ -70,7 +69,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
-									Team Leader at Salt Bergen, Volunteer Programmer at Fribyte, Event Organiser at ROOT Linjeforening, and former Vice President of the Student Council at Nordhordaland FHS.
+									Currently Working on a Startup, Team Leader at Salt Bergen, former Volunteer Programmer at Fribyte, former Event Organiser at ROOT Linjeforening, and former Vice President of the Student Council at Nordhordaland FHS.
 								</p>
 							</CardContent>
 						</Card>
