@@ -1,6 +1,6 @@
 # Julian Bosdal's Engineering Portfolio
 
-A modern, responsive engineering portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This project showcases Julian's professional experience, education, projects, and skills in a clean and interactive interface.
+A modern, responsive engineering portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This project showcases my professional experience, education, projects, and skills in a clean and interactive interface.
 
 ## 🚀 Features
 
@@ -13,8 +13,6 @@ A modern, responsive engineering portfolio website built with Next.js, Tailwind 
   - Education
   - Projects Showcase
   - Technical Skills
-  - Certificates
-  - Blog
   - Contact Information
 
 ## 🛠️ Tech Stack

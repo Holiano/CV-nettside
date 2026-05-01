@@ -161,7 +161,7 @@ export const projects: Project[] = [
 		description:
 			'Personal website and CV built from scratch at first, then using AI-assisted development. Inspiration found in the README file',
 		image: '/portfolio.webp',
-		tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages', 'Claude Code', 'Claude Design'],
+		tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Pages', 'Claude Code', 'Claude Design'],
 		link: 'https://julianbosdal.me',
 		repo: 'https://github.com/Holiano/CV-nettside',
 	},
@@ -177,9 +177,9 @@ export const projects: Project[] = [
 	{
 		title: 'Poker - group project',
 		description:
-			'Multiplayer Texas Hold\'em web app with a Java backend, PostgreSQL database, and server-side rendered pages. Group leader and managed collaboration using Maven and Git.',
+			'Built a multiplayer web app with Java backend, PostgreSQL database, and server-side rendered pages; led the team as group leader and managed collaboration via Scrum, Maven and Git.',
 		image: 'https://images.pexels.com/photos/15793573/pexels-photo-15793573.jpeg',
-		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Maven', 'Tomcat'],
+		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Maven', 'Tomcat', 'Scrum'],
 		repo: 'https://github.com/Holiano/poker-royale',
 	},
 ];
