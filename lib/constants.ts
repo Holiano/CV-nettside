@@ -177,7 +177,7 @@ export const projects: Project[] = [
 	{
 		title: 'Poker - group project',
 		description:
-			'Built a multiplayer web app with Java backend, PostgreSQL database, and server-side rendered pages; led the team as group leader and managed collaboration via Scrum, Maven and Git.',
+			'Built a multiplayer web app with Java backend, PostgreSQL database, and server-side rendered pages. Managed collaboration via Scrum, Maven and Git.',
 		image: 'https://images.pexels.com/photos/15793573/pexels-photo-15793573.jpeg',
 		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Maven', 'Tomcat', 'Scrum'],
 		repo: 'https://github.com/Holiano/poker-royale',
