@@ -85,7 +85,7 @@ export function HeroSection() {
 							</Link>
 						</Button>
 						<Button size="lg" variant="outline" asChild>
-							<a href="/Julian_Bosdal_CV.pdf" download>
+							<a href="/Julian_Hjartholm_Bosdal_CV.pdf" download>
 								Download CV <FileDown className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
