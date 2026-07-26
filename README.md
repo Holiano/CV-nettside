@@ -12,7 +12,6 @@ A modern, responsive engineering portfolio website built with Next.js, Tailwind 
   - Work Experience
   - Education
   - Projects Showcase
-  - Technical Skills
   - Contact Information
 
 ## 🛠️ Tech Stack
