@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Julian Hjartholm Bosdal',
 	description:
-		'Combining a strong academic foundation with hands-on development experience',
+		'Computer engineering student at HVL specialising in machine learning — co-founder and technical lead of an AI startup for the aquaculture industry, and incoming developer intern at Sparebanken Norge',
 	mainNav: [
 		{
 			title: 'Home',
@@ -14,10 +14,6 @@ export const siteConfig = {
 		{
 			title: 'Education',
 			href: '/education',
-		},
-		{
-			title: 'Skills',
-			href: '/skills',
 		},
 		{
 			title: 'Experience',
@@ -34,7 +30,7 @@ export const siteConfig = {
 		facebook: 'https://www.facebook.com/Holianox/',
 		instagram: 'https://www.instagram.com/julianbosdal/',
 		whatsapp: 'https://wa.me/4795454892',
-		email: 'mailto:Bosdalj@gmail.com',
+		email: 'mailto:bosdalj@gmail.com',
 		phone: 'tel:+4795454892',
 	},
 };
@@ -50,6 +46,18 @@ export type Experience = {
 };
 
 export const experiences: Experience[] = [
+	{
+		title: 'Developer Intern',
+		company: 'Sparebanken Norge',
+		location: 'Bergen, Norway',
+		startDate: 'Sep 2026',
+		endDate: 'Dec 2026',
+		description: [
+			'Upcoming internship on Team Webplattform',
+			'Joining the web platform team that builds and maintains the bank’s online banking solution; frontend development in a professional agile team',
+		],
+		technologies: ['Frontend Development', 'Agile', 'Web Platform'],
+	},
 	{
 		title: 'Team Leader',
 		company: 'Salt Bergen (Church)',
@@ -69,8 +77,8 @@ export const experiences: Experience[] = [
 		startDate: 'Aug 2024',
 		endDate: 'Aug 2025',
 		description: [
-			'Built and maintained client websites',
-			'Gained hands-on experience with Git, Docker, and server management',
+			'Built and maintained client websites for external clients',
+			'Worked with Git, Docker, and server management',
 		],
 		technologies: ['Git', 'Docker', 'Web Development', 'Server Management'],
 	},
@@ -159,19 +167,19 @@ export const projects: Project[] = [
 	{
 		title: 'Personal Portfolio & CV',
 		description:
-			'Personal website and CV built from scratch at first, then using AI-assisted development. Inspiration found in the README file',
+			'Personal website and CV built from scratch, then refined with AI assistance; deployed via GitHub Pages with custom domain.',
 		image: '/portfolio.webp',
 		tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Pages', 'Claude Code', 'Claude Design'],
 		link: 'https://julianbosdal.me',
 		repo: 'https://github.com/Holiano/CV-nettside',
 	},
 	{
-		title: 'Vela AI — Startup',
+		title: 'AkvaJournal — Startup',
 		description:
-			'Co-founding a startup targeting the aquaculture industry, building an app for fish health veterinarians. The app uses speech-to-text to capture in-field registrations hands-free, automatically logs findings, generates reports, and stores everything securely. This will dramatically reduce paperwork for vets working on-site.',
+			'Co-founder and technical lead of a voice-first PWA for hands-free field registration: Norwegian speech-to-text (NB-Whisper on Modal) with LLM structuring into Word/Excel reports, on a GDPR-compliant EU-hosted stack. Ran customer discovery in a conservative market — shadowed fish health biologists on site and mapped the friction in their existing journal workflow; currently developing on site with a prospective customer. Incubated at VIS.',
 		image: '/vela-ai.webp',
-		tags: ['Startup', 'Mobile App', 'Speech-to-Text'],
-		link: 'https://velaai.onrender.com/',
+		tags: ['Startup', 'Node.js', 'PWA', 'NB-Whisper/LLM', 'Supabase', 'Railway EU'],
+		link: 'https://akvajournal.no',
 		repo: 'https://github.com/isacskogsholm1/IsacFiskehelse',
 	},
 	{
@@ -203,11 +211,22 @@ export const education: Education[] = [
 		location: 'Bergen, Norway',
 		startDate: 'Aug 2024',
 		endDate: 'Jul 2027',
-		gpa: '4.67/5.0',
+		gpa: '4.42/5.0',
 		achievements: [
-			'Grade average: A, A, A, A, A, A, A, B, C across 9 graded courses',
-			'Distributed systems & networking (DAT110), systems development (DAT109), deep learning (DAT255)',
-			'Algorithms & data structures, databases, operating systems, web applications, statistics',
+			'Grade average: 4.42 / 5.0',
+			'ML/AI specialisation: machine learning (DAT158) and deep learning (DAT255)',
+			'Core CS: distributed systems, algorithms & data structures, databases',
+		],
+	},
+	{
+		degree: 'FutureMakers Bootcamp',
+		field: 'Upcoming · Two-week entrepreneurship bootcamp',
+		institution: 'HVL & University of Cape Town',
+		location: 'Cape Town, South Africa',
+		startDate: 'Oct 2026',
+		endDate: 'Oct 2026',
+		achievements: [
+			'Selected through application and interview for an intensive bootcamp at UCT, working in cross-cultural venture teams on real-world challenges',
 		],
 	},
 	{
@@ -232,50 +251,3 @@ export const education: Education[] = [
 		achievements: [],
 	},
 ];
-
-export type Certificate = {
-	title: string;
-	issuer: string;
-	date: string;
-	id?: string;
-	url?: string;
-	pdf?: string;
-};
-
-export const certificates: Certificate[] = [];
-
-export type Skill = {
-	name: string;
-	level: number; // 1-10
-	category: 'technical' | 'software' | 'soft' | 'language';
-};
-
-export const skills: Skill[] = [
-	// Technical Skills
-	{ name: 'Git', level: 9, category: 'technical' },
-	{ name: 'Prompt Engineering', level: 8, category: 'technical' },
-	{ name: 'SQL / Database Design', level: 8, category: 'technical' },
-	{ name: 'AI/LLM Integration', level: 7, category: 'technical' },
-
-	// Soft Skills
-	{ name: 'Team Leadership', level: 8, category: 'soft' },
-	{ name: 'Problem Solving', level: 9, category: 'soft' },
-	{ name: 'Analytical Thinking', level: 8, category: 'soft' },
-	{ name: 'Adaptability', level: 9, category: 'soft' },
-
-	// Languages
-	{ name: 'Norwegian', level: 10, category: 'language' },
-	{ name: 'English', level: 9, category: 'language' },
-	{ name: 'German', level: 4, category: 'language' },
-];
-
-export type BlogPost = {
-	title: string;
-	excerpt: string;
-	date: string;
-	author: string;
-	image: string;
-	slug: string;
-};
-
-export const blogPosts: BlogPost[] = [];
