@@ -45,7 +45,7 @@ export function AboutPreview() {
 					>
 						<h3 className="text-2xl font-bold mb-4">Julian Hjartholm Bosdal</h3>
 						<p className="text-muted-foreground mb-6">
-							I specialize in building practical, real-world applications. My current focus is advancing my skills in prompt engineering.
+							Computer engineering student specialising in machine learning — co-founder and technical lead of an AI startup for the aquaculture industry, and incoming developer intern at Sparebanken Norge.
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-6">
@@ -58,7 +58,7 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">GPA</h4>
-									<p className="text-sm text-muted-foreground">4.67 / 5.0</p>
+									<p className="text-sm text-muted-foreground">4.42 / 5.0</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">

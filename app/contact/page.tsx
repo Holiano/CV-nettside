@@ -96,7 +96,7 @@ export default function ContactPage() {
 										</div>
 										<div className="flex items-center">
 											<Mail className="h-5 w-5 text-primary mr-3" />
-											<a href="mailto:Bosdalj@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">Bosdalj@gmail.com</a>
+											<a href="mailto:bosdalj@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">bosdalj@gmail.com</a>
 										</div>
 										<div className="flex items-center">
 											<MapPin className="h-5 w-5 text-primary mr-3" />

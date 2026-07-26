@@ -21,7 +21,7 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I am passionate about building software that solves complex logic with modern solutions. I combine a strong theoretical foundation with a hands-on "builder" mentality. Currently, I specialize in Prompt Engineering, exploring how AI can solve complex problems and push the boundaries of software development.
+							I am a computer engineering student at HVL specialising in machine learning. Co-founder and technical lead of an AI startup for the aquaculture industry, and incoming developer intern at Sparebanken Norge. I am seeking a summer or graduate role in software development or applied AI from 2027.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
@@ -58,7 +58,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Pursuing a Bachelor in Computer Engineering at HVL in Bergen, I have built a strong foundation in programming, algorithms, databases, operating systems, and web development over my first two years. I'm experienced with Java, SQL, and distributed systems, and have hands-on project experience working both in teams and independently.
+									Pursuing a Bachelor in Computer Engineering at HVL in Bergen with an ML/AI specialisation — machine learning (DAT158) and deep learning (DAT255) — on top of core CS: distributed systems, algorithms & data structures, and databases. Grade average 4.42 / 5.0.
 								</p>
 							</CardContent>
 						</Card>
@@ -69,7 +69,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
-									Currently Working on a Startup, Team Leader at Salt Bergen, former Volunteer Programmer at Fribyte, former Event Organiser at ROOT Linjeforening, and former Vice President of the Student Council at Nordhordaland FHS.
+									Co-founder and technical lead of AkvaJournal, incoming Developer Intern at Sparebanken Norge, Team Leader at Salt Bergen, former Volunteer Programmer at Fribyte, and former Event Organiser at ROOT Linjeforening.
 								</p>
 							</CardContent>
 						</Card>
@@ -80,9 +80,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in Git, Prompt Engineering, and SQL/NoSQL design. Experienced with Java,
-									Spring Boot, and building AI-assisted applications.
-								</p>
+									Node.js, TypeScript, React/Next.js, Java, Spring Boot, SQL/PostgreSQL, and MongoDB, with tooling like Claude Code, Git, Docker, Playwright, and LLM APIs.								</p>
 							</CardContent>
 						</Card>
 					</motion.div>
