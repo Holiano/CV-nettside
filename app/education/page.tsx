@@ -59,7 +59,7 @@ export default function EducationPage() {
 											</div>
 											<div className="flex items-center text-muted-foreground">
 												<Calendar className="h-4 w-4 mr-2" />
-												{edu.startDate} - {edu.endDate}
+												{edu.startDate === edu.endDate ? edu.startDate : `${edu.startDate} - ${edu.endDate}`}
 											</div>
 										</div>
 
