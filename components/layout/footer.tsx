@@ -21,7 +21,6 @@ export function Footer() {
 	const navLinks = [
 		{ title: 'About Me', href: '/about' },
 		{ title: 'Education', href: '/education' },
-		{ title: 'Skills', href: '/skills' },
 		{ title: 'Experience', href: '/experience' },
 		{ title: 'Projects', href: '/projects' },
 	];
