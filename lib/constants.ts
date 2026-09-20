@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Julian Hjartholm Bosdal',
 	description:
-		'Computer engineering student at HVL specialising in machine learning — co-founder and technical lead of an AI startup for the aquaculture industry, and incoming developer intern at Sparebanken Norge',
+		'Computer engineering student at HVL (graduating 2027) with machine learning and deep learning coursework — developer intern at Sparebanken Norge working on the bank’s design system, and co-founder of an aquaculture AI startup',
 	mainNav: [
 		{
 			title: 'Home',
@@ -53,10 +53,12 @@ export const experiences: Experience[] = [
 		startDate: 'Sep 2026',
 		endDate: 'Dec 2026',
 		description: [
-			'Upcoming internship on Team Webplattform',
-			'Joining the web platform team that builds and maintains the bank’s online banking solution; frontend development in a professional agile team',
+			'Part of the team behind Splash, the component library that keeps the bank’s website and app visually consistent',
+			'Helped build a visual discovery page, so designers can browse components instead of scrolling long lists by name',
+			'Working on templates for common component sets and a Figma-to-code flow using only Splash components, to shorten the path from idea to prototype',
+			'Acting as a link between designers and developers',
 		],
-		technologies: ['Frontend Development', 'Agile', 'Web Platform'],
+		technologies: ['Design Systems', 'Component Library', 'Figma', 'Frontend Development'],
 	},
 	{
 		title: 'Team Leader',
@@ -176,7 +178,7 @@ export const projects: Project[] = [
 	{
 		title: 'AkvaJournal — Startup',
 		description:
-			'Co-founder and technical lead of a voice-first PWA for hands-free field registration: Norwegian speech-to-text (NB-Whisper on Modal) with LLM structuring into Word/Excel reports, on a GDPR-compliant EU-hosted stack. Ran customer discovery in a conservative market — shadowed fish health biologists on site and mapped the friction in their existing journal workflow; currently developing on site with a prospective customer. Incubated at VIS.',
+			'Co-founder and technical lead of a voice-first PWA for hands-free field registration: Norwegian speech-to-text (NB-Whisper on Modal) with LLM structuring into Word/Excel reports, on a GDPR-compliant EU-hosted stack. Ran customer discovery in a conservative market — shadowed fish health biologists on site and mapped the friction in their existing journal workflow. Incubated at VIS.',
 		image: '/vela-ai.webp',
 		tags: ['Startup', 'Node.js', 'PWA', 'NB-Whisper/LLM', 'Supabase', 'Railway EU'],
 		link: 'https://akvajournal.no',
@@ -207,14 +209,14 @@ export const education: Education[] = [
 	{
 		degree: 'Bachelor',
 		field: 'Computer Engineering',
-		institution: 'HVL – Western Norway University',
+		institution: 'HVL – Western Norway University of Applied Sciences',
 		location: 'Bergen, Norway',
 		startDate: 'Aug 2024',
 		endDate: 'Jul 2027',
 		gpa: '4.42/5.0',
 		achievements: [
 			'Grade average: 4.42 / 5.0',
-			'ML/AI specialisation: machine learning (DAT158) and deep learning (DAT255)',
+			'Coursework in ML/AI: machine learning (DAT158) and deep learning (DAT255)',
 			'Core CS: distributed systems, algorithms & data structures, databases',
 		],
 	},
