@@ -45,7 +45,7 @@ export function AboutPreview() {
 					>
 						<h3 className="text-2xl font-bold mb-4">Julian Hjartholm Bosdal</h3>
 						<p className="text-muted-foreground mb-6">
-							Computer engineering student specialising in machine learning — co-founder and technical lead of an AI startup for the aquaculture industry, and incoming developer intern at Sparebanken Norge.
+							Computer engineering student at HVL (graduating 2027) with machine learning and deep learning coursework — developer intern at Sparebanken Norge working on the bank&apos;s design system, and co-founder of an aquaculture AI startup.
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-6">

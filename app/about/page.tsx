@@ -21,7 +21,7 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I am a computer engineering student at HVL specialising in machine learning. Co-founder and technical lead of an AI startup for the aquaculture industry, and incoming developer intern at Sparebanken Norge. I am seeking a summer or graduate role in software development or applied AI from 2027.
+							I am a computer engineering student at HVL, graduating in 2027, with machine learning and deep learning coursework. I am a developer intern at Sparebanken Norge, working between designers and developers on the bank&apos;s design system. I co-founded an aquaculture AI startup and built an LLM-based voice-to-report tool. I am seeking a consultant role in software and applied AI in Bergen from 2027.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
@@ -58,7 +58,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Pursuing a Bachelor in Computer Engineering at HVL in Bergen with an ML/AI specialisation — machine learning (DAT158) and deep learning (DAT255) — on top of core CS: distributed systems, algorithms & data structures, and databases. Grade average 4.42 / 5.0.
+									Pursuing a Bachelor in Computer Engineering at HVL in Bergen with coursework in ML/AI — machine learning (DAT158) and deep learning (DAT255) — on top of core CS: distributed systems, algorithms &amp; data structures, and databases. Grade average 4.42 / 5.0.
 								</p>
 							</CardContent>
 						</Card>
@@ -69,7 +69,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
-									Co-founder and technical lead of AkvaJournal, incoming Developer Intern at Sparebanken Norge, Team Leader at Salt Bergen, former Volunteer Programmer at Fribyte, and former Event Organiser at ROOT Linjeforening.
+									Developer Intern at Sparebanken Norge on the Splash design system, co-founder and technical lead of AkvaJournal, Team Leader at Salt Bergen, former Volunteer Programmer at Fribyte, and former Event Organiser at ROOT Linjeforening.
 								</p>
 							</CardContent>
 						</Card>
@@ -80,7 +80,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Node.js, TypeScript, React/Next.js, Java, Spring Boot, SQL/PostgreSQL, and MongoDB, with tooling like Claude Code, Git, Docker, Playwright, and LLM APIs.								</p>
+									Node.js, TypeScript, JavaScript, React/Next.js, Java, Spring Boot, SQL/PostgreSQL, MongoDB, HTML/CSS and design systems, with tooling like Claude Code, Git, Docker, Playwright, and LLM APIs.								</p>
 							</CardContent>
 						</Card>
 					</motion.div>
