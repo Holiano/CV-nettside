@@ -53,12 +53,23 @@ export const experiences: Experience[] = [
 		startDate: 'Sep 2026',
 		endDate: 'Dec 2026',
 		description: [
-			'Part of the team behind Splash, the component library that keeps the bank’s website and app visually consistent',
-			'Helped build a visual discovery page, so designers can browse components instead of scrolling long lists by name',
-			'Working on templates for common component sets and a Figma-to-code flow using only Splash components, to shorten the path from idea to prototype',
-			'Acting as a link between designers and developers',
+			'Shipped a visual discovery page for the bank’s component library, so designers and developers can browse components instead of searching by name',
+			'Building a RAG chatbot for the internal developer documentation on Microsoft Foundry, owning the backend: document chunking, embeddings and vector search',
 		],
-		technologies: ['Design Systems', 'Component Library', 'Figma', 'Frontend Development'],
+		technologies: ['Microsoft Foundry', 'RAG', 'Azure', 'Design Systems', 'Figma', 'Claude Code'],
+	},
+	{
+		title: 'Board Member, Development Aid Committee',
+		company: 'KRIK Bergen',
+		location: 'Bergen, Norway',
+		startDate: 'Mar 2026',
+		endDate: 'Present',
+		description: [
+			'Organised a variety night, a charity run and an auction with raffle, raising close to NOK 300,000 in total',
+			'Proceeds go to IKG (Idrett Krysser Grenser), which gives children growing up in crime-affected communities an arena for sport and a way out of crime',
+			'IKG reached 7,000 children in Bolivia, Cambodia, Ecuador and Brazil last year',
+		],
+		technologies: ['Fundraising', 'Event Organisation', 'Volunteering'],
 	},
 	{
 		title: 'Team Leader',
@@ -167,15 +178,6 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		title: 'Personal Portfolio & CV',
-		description:
-			'Personal website and CV built from scratch, then refined with AI assistance; deployed via GitHub Pages with custom domain.',
-		image: '/portfolio.webp',
-		tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Pages', 'Claude Code', 'Claude Design'],
-		link: 'https://julianbosdal.me',
-		repo: 'https://github.com/Holiano/CV-nettside',
-	},
-	{
 		title: 'AkvaJournal — Startup',
 		description:
 			'Co-founder and technical lead of a voice-first PWA for hands-free field registration: Norwegian speech-to-text (NB-Whisper on Modal) with LLM structuring into Word/Excel reports, on a GDPR-compliant EU-hosted stack. Ran customer discovery in a conservative market — shadowed fish health biologists on site and mapped the friction in their existing journal workflow. Incubated at VIS.',
@@ -183,6 +185,30 @@ export const projects: Project[] = [
 		tags: ['Startup', 'Node.js', 'PWA', 'NB-Whisper/LLM', 'Supabase', 'Railway EU'],
 		link: 'https://akvajournal.no',
 		repo: 'https://github.com/isacskogsholm1/IsacFiskehelse',
+	},
+	{
+		title: 'Customer Service Agent (RAG)',
+		description:
+			'LLM customer service agent for a Norwegian web shop, grounded in the shop’s own policy documents and data. Vector search over a pgvector knowledge base (Supabase) plus tool calls for order and product lookups, with customer verification inside every tool. Built a 39-question test set with automatic fact checks and an LLM judge: vector retrieval matched full-context quality at under a fifth of the token cost.',
+		image: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg',
+		tags: ['Python', 'FastAPI', 'Gemini', 'RAG', 'pgvector', 'Supabase', 'LLM evals'],
+		repo: 'https://github.com/Holiano/RAG-support-agent',
+	},
+	{
+		title: 'LightScroll',
+		description:
+			'Free, open-source iPhone app that shows Instagram without the endless scroll: Reels, the Explore grid and suggested posts are hidden, and the app opens with a daily Bible verse. Built on a WebView with hide rules shipped as data from GitHub, so fixes reach users without a new App Store release. Collects no data.',
+		image: 'https://images.pexels.com/photos/17469129/pexels-photo-17469129.jpeg',
+		tags: ['React Native', 'Expo', 'TypeScript', 'iOS', 'Open Source'],
+	},
+	{
+		title: 'Personal Portfolio & CV',
+		description:
+			'Personal website and CV built from scratch, then refined with AI assistance; deployed via GitHub Pages with custom domain.',
+		image: '/portfolio.webp',
+		tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Pages', 'Claude Code', 'Claude Design'],
+		link: 'https://julianbosdal.me',
+		repo: 'https://github.com/Holiano/CV-nettside',
 	},
 	{
 		title: 'Poker - group project',
