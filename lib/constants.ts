@@ -201,6 +201,21 @@ export const projects: Project[] = [
 		repo: 'https://github.com/isacskogsholm1/IsacFiskehelse',
 	},
 	{
+		title: 'Customer Service Agent (RAG)',
+		description:
+			'LLM customer service agent for a Norwegian web shop, grounded in the shop’s own policy documents and data. Vector search over a pgvector knowledge base (Supabase) plus tool calls for order and product lookups, with customer verification inside every tool. Built a 39-question test set with automatic fact checks and an LLM judge: vector retrieval matched full-context quality at under a fifth of the token cost.',
+		image: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg',
+		tags: ['Python', 'FastAPI', 'Gemini', 'RAG', 'pgvector', 'Supabase', 'LLM evals'],
+		repo: 'https://github.com/Holiano/RAG-support-agent',
+	},
+	{
+		title: 'LightScroll',
+		description:
+			'Free, open-source iPhone app that shows Instagram without the endless scroll: Reels, the Explore grid and suggested posts are hidden, and the app opens with a daily Bible verse. Built on a WebView with hide rules shipped as data from GitHub, so fixes reach users without a new App Store release. Collects no data.',
+		image: 'https://images.pexels.com/photos/17469129/pexels-photo-17469129.jpeg',
+		tags: ['React Native', 'Expo', 'TypeScript', 'iOS', 'Open Source'],
+	},
+	{
 		title: 'Personal Portfolio & CV',
 		description:
 			'The website you are on now. I built the first version from scratch and have since improved it with help from AI. Hosted on GitHub Pages with my own domain.',
