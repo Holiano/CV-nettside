@@ -71,7 +71,7 @@ export default function ExperiencePage() {
 										</div>
 
 										<div className="mt-6">
-											<h3 className="text-lg font-semibold mb-3">Technologies & Tools</h3>
+											<h3 className="text-lg font-semibold mb-3">Skills</h3>
 											<div className="flex flex-wrap gap-2">
 												{exp.technologies.map((tech, i) => (
 													<Badge key={i} variant="secondary">

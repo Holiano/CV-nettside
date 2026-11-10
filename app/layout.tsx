@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Julian Bosdal – Portfolio',
-	description: 'Computer engineering student at HVL (graduating 2027) with machine learning and deep learning coursework — developer intern at Sparebanken Norge working on the bank’s design system, and co-founder of an aquaculture AI startup',
+	description: 'Computer engineering student at HVL (graduating 2027), intern at Sparebanken Norge and founder of MerTid, a B2B startup that aims to help small businesses use AI safely.',
 };
 
 export default function RootLayout({

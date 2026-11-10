@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Julian Hjartholm Bosdal',
 	description:
-		'Computer engineering student at HVL (graduating 2027) with machine learning and deep learning coursework — developer intern at Sparebanken Norge working on the bank’s design system, and co-founder of an aquaculture AI startup',
+		'Computer engineering student at HVL (graduating 2027), intern at Sparebanken Norge and founder of MerTid, a B2B startup that aims to help small businesses use AI safely.',
 	mainNav: [
 		{
 			title: 'Home',
@@ -53,12 +53,11 @@ export const experiences: Experience[] = [
 		startDate: 'Sep 2026',
 		endDate: 'Dec 2026',
 		description: [
-			'Part of the team behind Splash, the component library that keeps the bank’s website and app visually consistent',
-			'Helped build a visual discovery page, so designers can browse components instead of scrolling long lists by name',
-			'Working on templates for common component sets and a Figma-to-code flow using only Splash components, to shorten the path from idea to prototype',
+			'Bringing new ideas and AI solutions into a bank where security comes first',
+			'Working within strict requirements for privacy and GDPR',
 			'Acting as a link between designers and developers',
 		],
-		technologies: ['Design Systems', 'Component Library', 'Figma', 'Frontend Development'],
+		technologies: ['AI', 'Privacy/GDPR', 'Security Awareness', 'Cross-Team Communication'],
 	},
 	{
 		title: 'Team Leader',
@@ -73,6 +72,18 @@ export const experiences: Experience[] = [
 		technologies: ['Leadership', 'Event Organisation', 'Team Management'],
 	},
 	{
+		title: 'Board Member, Aid Committee',
+		company: 'Student-KRIK Bergen',
+		location: 'Bergen, Norway',
+		startDate: 'Nov 2025',
+		endDate: 'Present',
+		description: [
+			'Raising money and awareness for Sports Crosses Borders, KRIK’s aid programme that uses sport to reach children and young people in Cambodia, Ecuador, Bolivia and Brazil',
+			'Planning social events and fundraisers for students in Bergen',
+		],
+		technologies: ['Fundraising', 'Event Planning', 'Board Work', 'Volunteering'],
+	},
+	{
 		title: 'Volunteer Programmer',
 		company: 'Fribyte',
 		location: 'Bergen, Norway',
@@ -82,7 +93,7 @@ export const experiences: Experience[] = [
 			'Built and maintained client websites for external clients',
 			'Worked with Git, Docker, and server management',
 		],
-		technologies: ['Git', 'Docker', 'Web Development', 'Server Management'],
+		technologies: ['Client Communication', 'Web Development', 'Teamwork'],
 	},
 	{
 		title: 'Event Organiser',
@@ -167,29 +178,43 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		title: 'Personal Portfolio & CV',
+		title: 'MerTid',
 		description:
-			'Personal website and CV built from scratch, then refined with AI assistance; deployed via GitHub Pages with custom domain.',
-		image: '/portfolio.webp',
-		tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Pages', 'Claude Code', 'Claude Design'],
-		link: 'https://julianbosdal.me',
-		repo: 'https://github.com/Holiano/CV-nettside',
+			'My own B2B startup, still at the idea stage. I was one of 4 finalists pitching to juries at Haugekonferansen 2026, where I got 5 interested pilots in Bergen. The plan is to help small, values-driven businesses start using AI safely: find out where their time goes, set up the tools, train the staff and measure how many hours they save. Only 4 in 10 small businesses use AI today, compared to 8 in 10 large ones (SSB 2026), and that gap is what I want to close. The subscription pays for itself at around 8 saved hours a month. In each pilot we will measure the hours before and after, keep the data in the EU and always have a human approve what the AI produces.',
+		image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
+		tags: ['Startup', 'B2B', 'AI Implementation', 'Business Development', 'Pricing', 'Privacy/GDPR', 'Pitching'],
 	},
 	{
-		title: 'AkvaJournal — Startup',
+		title: 'Howl',
 		description:
-			'Co-founder and technical lead of a voice-first PWA for hands-free field registration: Norwegian speech-to-text (NB-Whisper on Modal) with LLM structuring into Word/Excel reports, on a GDPR-compliant EU-hosted stack. Ran customer discovery in a conservative market — shadowed fish health biologists on site and mapped the friction in their existing journal workflow. Incubated at VIS.',
+			'Built in ten days by a team of six at the ZERO2MVP bootcamp at UCT in Cape Town. Howl warns small shop owners about unrest and looting near their store, using news, social media and police data. Alerts come through Telegram, and there is an SOS button for emergencies. My part was user research, stakeholder contact and the pitch. I visited shops in Rondebosch and Salt River, where owners asked for a panic button before we had even mentioned it, so it went straight into the MVP. I also co-presented our investor pitch.',
+		image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg',
+		tags: ['Startup', 'Customer Discovery', 'UX', 'Stakeholder Management', 'Pitching'],
+	},
+	{
+		title: 'AkvaJournal',
+		description:
+			'I co-founded AkvaJournal and led the technical side. It was a voice app that lets fish health biologists log their observations hands-free out in the field. Speech is transcribed with NB-Whisper, and an LLM turns it into Word and Excel reports, all hosted in the EU. Before we built anything, we followed biologists on site to see where their current journal routine falls short. Incubated at VIS.',
 		image: '/vela-ai.webp',
-		tags: ['Startup', 'Node.js', 'PWA', 'NB-Whisper/LLM', 'Supabase', 'Railway EU'],
+		tags: ['Startup', 'Technical Leadership', 'Customer Discovery', 'Applied AI', 'Privacy/GDPR'],
 		link: 'https://akvajournal.no',
 		repo: 'https://github.com/isacskogsholm1/IsacFiskehelse',
 	},
 	{
+		title: 'Personal Portfolio & CV',
+		description:
+			'The website you are on now. I built the first version from scratch and have since improved it with help from AI. Hosted on GitHub Pages with my own domain.',
+		image: '/portfolio.webp',
+		tags: ['Web Design', 'AI Tools', 'Continuous Learning'],
+		link: 'https://julianbosdal.me',
+		repo: 'https://github.com/Holiano/CV-nettside',
+	},
+	{
 		title: 'Poker - group project',
 		description:
-			'Built a multiplayer web app with Java backend, PostgreSQL database, and server-side rendered pages. Managed collaboration via Scrum, Maven and Git.',
+			'A multiplayer poker game we made as a group project. Java and Spring Boot on the backend, PostgreSQL for data and pages rendered on the server. We worked in Scrum and used Maven and Git.',
 		image: 'https://images.pexels.com/photos/15793573/pexels-photo-15793573.jpeg',
-		tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Maven', 'Tomcat', 'Scrum'],
+		tags: ['Teamwork', 'Scrum', 'Project Management', 'Problem-Solving'],
 		repo: 'https://github.com/Holiano/poker-royale',
 	},
 ];
@@ -212,7 +237,7 @@ export const education: Education[] = [
 		institution: 'HVL – Western Norway University of Applied Sciences',
 		location: 'Bergen, Norway',
 		startDate: 'Aug 2024',
-		endDate: 'Jul 2027',
+		endDate: 'Jun 2027',
 		gpa: '4.42/5.0',
 		achievements: [
 			'Grade average: 4.42 / 5.0',
@@ -222,13 +247,15 @@ export const education: Education[] = [
 	},
 	{
 		degree: 'FutureMakers Bootcamp',
-		field: 'Upcoming · Two-week entrepreneurship bootcamp',
+		field: 'Two-week entrepreneurship bootcamp (MakersForge ZERO2MVP)',
 		institution: 'HVL & University of Cape Town',
 		location: 'Cape Town, South Africa',
 		startDate: 'Oct 2026',
 		endDate: 'Oct 2026',
 		achievements: [
-			'Selected through application and interview for an intensive bootcamp at UCT, working in cross-cultural venture teams on real-world challenges',
+			'Selected through application and interview',
+			'Built Howl, a safety app for small shop owners, from idea to working MVP in ten days with a team of six',
+			'Did customer interviews in local shops and co-presented our investor pitch',
 		],
 	},
 	{

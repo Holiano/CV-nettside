@@ -16,7 +16,7 @@ export function AboutPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="About Me"
-					description="Computer engineering student at HVL with strong academic results and hands-on experience building real projects."
+					description="Engineering student, founder and team leader based in Bergen."
 				/>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
@@ -45,7 +45,7 @@ export function AboutPreview() {
 					>
 						<h3 className="text-2xl font-bold mb-4">Julian Hjartholm Bosdal</h3>
 						<p className="text-muted-foreground mb-6">
-							Computer engineering student at HVL (graduating 2027) with machine learning and deep learning coursework — developer intern at Sparebanken Norge working on the bank&apos;s design system, and co-founder of an aquaculture AI startup.
+							Computer engineering student at HVL (graduating 2027), intern at Sparebanken Norge and founder of MerTid, a B2B startup that aims to help small businesses use AI safely. I like taking new technology and making it useful for real people.
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-6">
@@ -63,8 +63,8 @@ export function AboutPreview() {
 							</Card>
 							<Card className="card-gradient">
 								<CardContent className="p-4">
-									<h4 className="font-semibold">Projects</h4>
-									<p className="text-sm text-muted-foreground">3 Personal Projects</p>
+									<h4 className="font-semibold">Startups</h4>
+									<p className="text-sm text-muted-foreground">MerTid, Howl, AkvaJournal</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
