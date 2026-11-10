@@ -203,17 +203,17 @@ export const projects: Project[] = [
 	{
 		title: 'Customer Service Agent (RAG)',
 		description:
-			'LLM customer service agent for a Norwegian web shop, grounded in the shop’s own policy documents and data. Vector search over a pgvector knowledge base (Supabase) plus tool calls for order and product lookups, with customer verification inside every tool. Built a 39-question test set with automatic fact checks and an LLM judge: vector retrieval matched full-context quality at under a fifth of the token cost.',
+			'An AI customer service agent I built for a Norwegian web shop. It answers using the shop’s own policies and data, and it can look up orders and products, but only after checking who the customer is. To find out if it worked, I wrote 39 test questions and checked the answers automatically. Searching for just the relevant documents gave answers as good as giving the AI everything, using less than a fifth of the tokens.',
 		image: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg',
-		tags: ['Python', 'FastAPI', 'Gemini', 'RAG', 'pgvector', 'Supabase', 'LLM evals'],
+		tags: ['Applied AI', 'Customer Service', 'Testing', 'Security'],
 		repo: 'https://github.com/Holiano/RAG-support-agent',
 	},
 	{
 		title: 'LightScroll',
 		description:
-			'Free, open-source iPhone app that shows Instagram without the endless scroll: Reels, the Explore grid and suggested posts are hidden, and the app opens with a daily Bible verse. Built on a WebView with hide rules shipped as data from GitHub, so fixes reach users without a new App Store release. Collects no data.',
+			'A free, open-source iPhone app that shows Instagram without the endless scrolling. Reels, the Explore grid and suggested posts are hidden, and the app opens with a Bible verse of the day. It collects no data. The hiding rules are stored on GitHub, so I can fix things without releasing a new version in the App Store. Built with React Native and Expo.',
 		image: 'https://images.pexels.com/photos/17469129/pexels-photo-17469129.jpeg',
-		tags: ['React Native', 'Expo', 'TypeScript', 'iOS', 'Open Source'],
+		tags: ['Mobile App', 'Open Source', 'Privacy'],
 	},
 	{
 		title: 'Personal Portfolio & CV',
